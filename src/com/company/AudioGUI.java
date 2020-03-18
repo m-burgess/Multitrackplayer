@@ -1,67 +1,108 @@
 package com.company;
 
 import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
+import java.io.File;
 
 public class AudioGUI {
-    private JButton setDirectoryButton;
-    private JTextField textField1;
-    private JList list1;
-    private JSlider slider1;
-    private JSlider slider2;
-    private JSlider slider3;
-    private JSlider slider4;
-    private JSlider slider5;
-    private JSlider slider6;
-    private JSlider slider7;
-    private JSlider slider8;
-    private JSlider slider9;
-    private JSlider slider10;
-    private JSlider slider11;
-    private JSlider slider12;
-    private JSlider slider13;
-    private JSlider slider14;
-    private JSlider slider15;
-    private JSlider slider16;
-    private JSlider slider17;
-    private JSlider slider18;
-    private JSlider slider19;
-    private JSlider slider20;
-    private JSlider slider21;
-    private JSlider slider22;
-    private JSlider slider23;
-    private JSlider slider24;
-    private JSlider slider25;
-    private JSlider slider26;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JTextField textField4;
-    private JTextField textField5;
-    private JTextField textField6;
-    private JTextField textField7;
-    private JTextField textField8;
-    private JTextField textField9;
-    private JTextField textField10;
-    private JTextField textField11;
-    private JTextField textField12;
-    private JTextField textField13;
-    private JTextField textField14;
-    private JTextField textField15;
-    private JTextField textField16;
-    private JTextField textField17;
-    private JTextField textField18;
-    private JTextField textField19;
-    private JTextField textField20;
-    private JTextField textField21;
-    private JTextField textField22;
-    private JTextField textField23;
-    private JTextField textField24;
-    private JTextField textField25;
-    private JTextField textField26;
-    private JTextField textField27;
-    private JButton muteButton;
-    private JButton muteButton1;
-    private JButton muteButton4;
-    private JButton muteButton5;
-    private JButton muteButton7;
-    private JButton restartSongButton;
+    public JButton setDirectoryButton;
+    public JTextField directoryTextField;
+    public JList songList;
+    public JSlider slider1;
+    public JSlider slider2;
+    public JSlider slider3;
+    public JSlider slider4;
+    public JSlider slider5;
+    public JSlider slider6;
+    public JSlider slider7;
+    public JSlider slider8;
+    public JSlider slider9;
+    public JSlider slider10;
+    public JSlider slider11;
+    public JSlider slider12;
+    public JSlider slider13;
+    public JSlider slider14;
+    public JSlider slider15;
+    public JSlider slider16;
+    public JSlider slider17;
+    public JSlider slider18;
+    public JSlider slider19;
+    public JSlider slider20;
+    public JSlider slider21;
+    public JSlider slider22;
+    public JSlider slider23;
+    public JSlider slider24;
+    public JSlider slider25;
+    public JSlider slider26;
+    public JTextField textField2;
+    public JTextField textField3;
+    public JTextField textField4;
+    public JTextField textField5;
+    public JTextField textField6;
+    public JTextField textField7;
+    public JTextField textField8;
+    public JTextField textField9;
+    public JTextField textField10;
+    public JTextField textField11;
+    public JTextField textField12;
+    public JTextField textField13;
+    public JTextField textField14;
+    public JTextField textField15;
+    public JTextField textField16;
+    public JTextField textField17;
+    public JTextField textField18;
+    public JTextField textField19;
+    public JTextField textField20;
+    public JTextField textField21;
+    public JTextField textField22;
+    public JTextField textField23;
+    public JTextField textField24;
+    public JTextField textField25;
+    public JTextField textField26;
+    public JTextField textField27;
+    public JButton muteButton;
+    public JButton muteButton1;
+    public JButton muteButton4;
+    public JButton muteButton5;
+    public JButton muteButton7;
+    public JButton restartSongButton;
+    public JPanel multitrackGuiPanel;
+    private JScrollBar horizontalScrollBar;
+
+    public AudioGUI() {
+        setDirectoryButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String directory = AudioTool.directoryDialog().toString();
+                directoryTextField.setText(directory);
+                File path = new File(directoryTextField.getText());
+                String multitrackFolders[] = path.list();
+                for(int i=0; i<multitrackFolders.length; i++) {
+                    String songs = multitrackFolders[i].replace("Multitrack-", " ");
+                    songList.setListData(multitrackFolders);
+                }
+
+            }
+        });
+
+
+        songList.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent listSelectionEvent) {
+
+                if(!listSelectionEvent.getValueIsAdjusting()) {
+
+                    System.out.println(directoryTextField.getText() + "\\" + songList.getSelectedValue());
+                    AudioTool.getFiles(directoryTextField.getText() + "\\" + songList.getSelectedValue());
+                }
+            }
+        });
+    }
+
+
 }

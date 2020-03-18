@@ -4,6 +4,8 @@ import com.sun.jdi.event.ThreadStartEvent;
 import com.sun.jdi.request.ThreadStartRequest;
 
 import javax.sound.sampled.*;
+import javax.swing.*;
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class AudioTool implements Runnable {
+public class AudioTool extends Component implements Runnable {
 
     String songPath;
 
@@ -84,7 +86,7 @@ public class AudioTool implements Runnable {
                     .map(x -> x.toString()).collect(Collectors.toList());
 
             for (int i=0; i<result.size(); i++) {
-                System.out.println(result.get(i));
+
 
                  String temp = result.get(i);
 
@@ -114,13 +116,21 @@ public class AudioTool implements Runnable {
 
     }
 
+    public static File directoryDialog() {
+        int result;
+
+        JFileChooser chooser = new JFileChooser("user.home");
+        chooser.setDialogTitle("Select Multitrack Directory");
+        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        chooser.setAcceptAllFileFilterUsed(false);
+        chooser.showOpenDialog(null);
+        return chooser.getSelectedFile().getAbsoluteFile();
+
+    }
+
+    }
 
 
 
 
 
-
-
-
-
-}
