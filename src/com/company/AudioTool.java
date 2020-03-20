@@ -23,9 +23,16 @@ public class AudioTool extends Component implements Runnable {
 
     AudioInputStream audioInputStream1;
 
+    SourceDataLine audioLine = null;
+
+    String[] threadList;
+
+    static volatile boolean exit = false;
+
     public AudioTool(String path) {
 
         songPath = path;
+
 
 
     }
@@ -40,16 +47,17 @@ public class AudioTool extends Component implements Runnable {
             audioInputStream1 =
                     AudioSystem.getAudioInputStream(new File(songPath).getAbsoluteFile());
 
-            // create clip reference
+            // get format
             AudioFormat format = audioInputStream1.getFormat();
 
             DataLine.Info info = new DataLine.Info(SourceDataLine.class, format);
 
-            SourceDataLine audioLine = (SourceDataLine) AudioSystem.getLine(info);
+            audioLine = (SourceDataLine) AudioSystem.getLine(info);
 
             audioLine.open(format);
 
             audioLine.start();
+
 
             int BUFFER_SIZE = 4096;
 
@@ -60,15 +68,26 @@ public class AudioTool extends Component implements Runnable {
                 audioLine.write(bytesBuffer, 0, bytesRead);
             }
 
-            audioLine.drain();
 
-            audioLine.close();
-
-            audioInputStream1.close();
 
 
             AudioTool player = new AudioTool(songPath);
+
             player.run();
+
+
+
+            if(!audioLine.isRunning()) {
+                audioLine.stop();
+
+                audioLine.flush();
+
+                audioLine.drain();
+
+
+                audioLine.close();
+            }
+
 
 
         } catch (Exception ex) {
@@ -96,9 +115,14 @@ public class AudioTool extends Component implements Runnable {
 
                  thread.start();
 
+                System.out.println(thread.getId());
+
+
 
 
             }
+
+
 
 
 
@@ -126,6 +150,10 @@ public class AudioTool extends Component implements Runnable {
         chooser.showOpenDialog(null);
         return chooser.getSelectedFile().getAbsoluteFile();
 
+    }
+
+    public static void stop(){
+        exit = true;
     }
 
     }

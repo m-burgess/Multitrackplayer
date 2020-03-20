@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="3" width="2085" height="719"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-16777216"/>
+    </properties>
     <border type="none"/>
     <children>
       <grid id="2b987" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -13,27 +15,34 @@
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="10" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="5d6f7" class="javax.swing.JButton" binding="setDirectoryButton" default-binding="true">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="500" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-14605274"/>
+              <foreground color="-3421237"/>
               <text value="Set Directory"/>
             </properties>
           </component>
           <component id="da85f" class="javax.swing.JTextField" binding="directoryTextField">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="1300" height="-1"/>
+                <preferred-size width="1300" height="45"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13354952"/>
               <editable value="false"/>
+              <foreground color="-3092272"/>
+              <text value="Test"/>
             </properties>
           </component>
         </children>
@@ -43,7 +52,9 @@
         <constraints>
           <grid row="1" column="0" row-span="4" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="83495" class="javax.swing.JList" binding="songList">
@@ -52,7 +63,16 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-13948117"/>
+              <enabled value="true"/>
+              <font name="Source Code Pro Semibold"/>
+              <foreground color="-1776412"/>
+              <model>
+                <item value="Test"/>
+              </model>
+              <selectionMode value="0"/>
+            </properties>
           </component>
         </children>
       </grid>
@@ -61,7 +81,9 @@
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="8532a" class="javax.swing.JSlider" default-binding="true">
@@ -71,28 +93,36 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
+              <foreground color="-4475973"/>
               <orientation value="1"/>
+              <paintLabels value="true"/>
+              <paintTicks value="true"/>
+              <snapToTicks value="true"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
           <component id="d0479" class="javax.swing.JButton" default-binding="true">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="f4e30" class="javax.swing.JTextField" default-binding="true">
+          <component id="f4e30" class="javax.swing.JTextField" binding="inst1">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -103,7 +133,9 @@
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="f23f6" class="javax.swing.JSlider" default-binding="true">
@@ -113,28 +145,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="5695a" class="javax.swing.JButton" default-binding="true">
+          <component id="8ee0d" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="a4348" class="javax.swing.JTextField" default-binding="true">
+          <component id="c06ff" class="javax.swing.JTextField">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="50" height="25"/>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -145,7 +181,9 @@
         <constraints>
           <grid row="1" column="9" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="72015" class="javax.swing.JLabel">
@@ -155,6 +193,7 @@
               </grid>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="AG"/>
             </properties>
           </component>
@@ -165,6 +204,7 @@
               </grid>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="Bass"/>
             </properties>
           </component>
@@ -175,6 +215,7 @@
               </grid>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="BGVS"/>
             </properties>
           </component>
@@ -185,6 +226,7 @@
               </grid>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="Click/Guide"/>
             </properties>
           </component>
@@ -193,6 +235,7 @@
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="Drums"/>
             </properties>
           </component>
@@ -203,6 +246,7 @@
               </grid>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="Piano"/>
             </properties>
           </component>
@@ -213,6 +257,7 @@
               </grid>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="EG 1"/>
             </properties>
           </component>
@@ -223,6 +268,7 @@
               </grid>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="EG 2"/>
             </properties>
           </component>
@@ -233,6 +279,7 @@
               </grid>
             </constraints>
             <properties>
+              <foreground color="-2434342"/>
               <text value="Synth"/>
             </properties>
           </component>
@@ -241,6 +288,8 @@
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -249,6 +298,8 @@
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -257,6 +308,8 @@
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -265,6 +318,8 @@
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -273,6 +328,8 @@
               <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -281,6 +338,8 @@
               <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -289,6 +348,8 @@
               <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -297,6 +358,8 @@
               <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -305,6 +368,8 @@
               <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3487030"/>
               <text value="Mute"/>
             </properties>
           </component>
@@ -315,7 +380,9 @@
         <constraints>
           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="fa23b" class="javax.swing.JSlider" default-binding="true">
@@ -325,28 +392,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="6834c" class="javax.swing.JButton" default-binding="true">
+          <component id="f7fba" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="7e79d" class="javax.swing.JTextField" default-binding="true">
+          <component id="f4659" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -357,7 +428,9 @@
         <constraints>
           <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="ec7e7" class="javax.swing.JSlider" default-binding="true">
@@ -367,28 +440,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="2500" class="javax.swing.JButton" default-binding="true">
+          <component id="7c217" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="105f9" class="javax.swing.JTextField" default-binding="true">
+          <component id="40f03" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -399,7 +476,9 @@
         <constraints>
           <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="853ab" class="javax.swing.JSlider" default-binding="true">
@@ -409,28 +488,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="3440d" class="javax.swing.JButton" default-binding="true">
+          <component id="7d56e" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="c1bfb" class="javax.swing.JTextField" default-binding="true">
+          <component id="3c60c" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -441,7 +524,9 @@
         <constraints>
           <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="a324e" class="javax.swing.JSlider" default-binding="true">
@@ -451,28 +536,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="4dbed" class="javax.swing.JButton" default-binding="true">
+          <component id="e3a5a" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="e3c05" class="javax.swing.JTextField" default-binding="true">
+          <component id="bdf1d" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -483,7 +572,9 @@
         <constraints>
           <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="e4a3f" class="javax.swing.JSlider" default-binding="true">
@@ -493,28 +584,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="105a5" class="javax.swing.JButton" default-binding="true">
+          <component id="1dc78" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="dbe55" class="javax.swing.JTextField" default-binding="true">
+          <component id="4b4fa" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -525,7 +620,9 @@
         <constraints>
           <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="140af" class="javax.swing.JSlider" default-binding="true">
@@ -535,28 +632,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="fbc50" class="javax.swing.JButton" default-binding="true">
+          <component id="5a104" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="78acd" class="javax.swing.JTextField" default-binding="true">
+          <component id="b6ff2" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -567,7 +668,9 @@
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="25c9f" class="javax.swing.JSlider" default-binding="true">
@@ -577,28 +680,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="eafa6" class="javax.swing.JButton" default-binding="true">
+          <component id="6fead" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="861ad" class="javax.swing.JTextField" default-binding="true">
+          <component id="9be69" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -609,7 +716,9 @@
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="3198b" class="javax.swing.JSlider" default-binding="true">
@@ -619,28 +728,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="d5c3f" class="javax.swing.JButton" default-binding="true">
+          <component id="594dd" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="e7094" class="javax.swing.JTextField" default-binding="true">
+          <component id="67f61" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -651,7 +764,9 @@
         <constraints>
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="6d176" class="javax.swing.JSlider" default-binding="true">
@@ -661,28 +776,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="97098" class="javax.swing.JButton" default-binding="true">
+          <component id="e1a45" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="c2a1e" class="javax.swing.JTextField" default-binding="true">
+          <component id="90d04" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -693,7 +812,9 @@
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="bdd0" class="javax.swing.JSlider" default-binding="true">
@@ -703,28 +824,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="59a96" class="javax.swing.JButton" default-binding="true">
+          <component id="e9520" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="3d3a5" class="javax.swing.JTextField" default-binding="true">
+          <component id="ae1e1" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -735,7 +860,9 @@
         <constraints>
           <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="e98bd" class="javax.swing.JSlider" default-binding="true">
@@ -745,28 +872,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="47c0a" class="javax.swing.JButton" default-binding="true">
+          <component id="82de8" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="dd1a8" class="javax.swing.JTextField" default-binding="true">
+          <component id="a5e0f" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -777,7 +908,9 @@
         <constraints>
           <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="bb24" class="javax.swing.JSlider" default-binding="true">
@@ -787,28 +920,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="49291" class="javax.swing.JButton" default-binding="true">
+          <component id="a943a" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="c82fa" class="javax.swing.JTextField" default-binding="true">
+          <component id="3fd1e" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -819,7 +956,9 @@
         <constraints>
           <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="c12d2" class="javax.swing.JSlider" default-binding="true">
@@ -829,28 +968,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="6686e" class="javax.swing.JButton" default-binding="true">
+          <component id="d3946" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="1c41f" class="javax.swing.JTextField" default-binding="true">
+          <component id="c3a7e" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -861,7 +1004,9 @@
         <constraints>
           <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="881c6" class="javax.swing.JSlider" default-binding="true">
@@ -871,28 +1016,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="5d47b" class="javax.swing.JButton" default-binding="true">
+          <component id="cbe23" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="c9dd8" class="javax.swing.JTextField" default-binding="true">
+          <component id="8e66c" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -903,7 +1052,9 @@
         <constraints>
           <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="33bd6" class="javax.swing.JSlider" default-binding="true">
@@ -913,28 +1064,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="5b354" class="javax.swing.JButton" default-binding="true">
+          <component id="27627" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="6e61f" class="javax.swing.JTextField" default-binding="true">
+          <component id="2a954" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -945,7 +1100,9 @@
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="e3bc1" class="javax.swing.JSlider" default-binding="true">
@@ -955,28 +1112,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="4a7dc" class="javax.swing.JButton" default-binding="true">
+          <component id="a9749" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="5e9c" class="javax.swing.JTextField" default-binding="true">
+          <component id="869d6" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -987,7 +1148,9 @@
         <constraints>
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="3ecd2" class="javax.swing.JSlider" default-binding="true">
@@ -997,28 +1160,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="9153b" class="javax.swing.JButton" default-binding="true">
+          <component id="1047b" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="f1fbe" class="javax.swing.JTextField" default-binding="true">
+          <component id="84e0e" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -1029,7 +1196,9 @@
         <constraints>
           <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="aa36" class="javax.swing.JSlider" default-binding="true">
@@ -1039,28 +1208,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="aa86f" class="javax.swing.JButton" default-binding="true">
+          <component id="30d1d" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="be396" class="javax.swing.JTextField" default-binding="true">
+          <component id="20925" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -1071,7 +1244,9 @@
         <constraints>
           <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="ab922" class="javax.swing.JSlider" default-binding="true">
@@ -1081,28 +1256,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="86ba1" class="javax.swing.JButton" default-binding="true">
+          <component id="f8b67" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="4078c" class="javax.swing.JTextField" default-binding="true">
+          <component id="38e5f" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -1113,7 +1292,9 @@
         <constraints>
           <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="4e6e7" class="javax.swing.JSlider" default-binding="true">
@@ -1123,28 +1304,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="3814b" class="javax.swing.JButton" default-binding="true">
+          <component id="80e38" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="2e021" class="javax.swing.JTextField" default-binding="true">
+          <component id="53eef" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -1155,7 +1340,9 @@
         <constraints>
           <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="7f81d" class="javax.swing.JSlider" default-binding="true">
@@ -1165,28 +1352,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="4958" class="javax.swing.JButton" default-binding="true">
+          <component id="6613d" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="3dc6" class="javax.swing.JTextField" default-binding="true">
+          <component id="ad358" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -1197,7 +1388,9 @@
         <constraints>
           <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="b99fb" class="javax.swing.JSlider" default-binding="true">
@@ -1207,28 +1400,32 @@
               </grid>
             </constraints>
             <properties>
+              <background color="-16777216"/>
               <orientation value="1"/>
               <value value="100"/>
               <valueIsAdjusting value="true"/>
             </properties>
           </component>
-          <component id="9d65d" class="javax.swing.JButton" default-binding="true">
+          <component id="2100a" class="javax.swing.JButton" default-binding="true">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="50" height="10"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3289651"/>
               <text value="M"/>
             </properties>
           </component>
-          <component id="2c5fc" class="javax.swing.JTextField" default-binding="true">
+          <component id="ec0ca" class="javax.swing.JTextField">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="200" height="25"/>
               </grid>
             </constraints>
             <properties>
+              <background color="-12763070"/>
               <editable value="false"/>
             </properties>
           </component>
@@ -1239,7 +1436,9 @@
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="9" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-16777216"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="8aff" class="javax.swing.JButton" binding="restartSongButton" default-binding="true">
@@ -1247,6 +1446,8 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3618616"/>
               <text value="Restart Song"/>
             </properties>
           </component>
@@ -1255,14 +1456,18 @@
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3618616"/>
               <text value="Previous"/>
             </properties>
           </component>
-          <component id="a07d3" class="javax.swing.JButton" default-binding="true">
+          <component id="a07d3" class="javax.swing.JButton" binding="playButton">
             <constraints>
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3618616"/>
               <text value="Play"/>
             </properties>
           </component>
@@ -1271,6 +1476,8 @@
               <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3618616"/>
               <text value="Next"/>
             </properties>
           </component>
@@ -1279,6 +1486,8 @@
               <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-13948117"/>
+              <foreground color="-3618616"/>
               <text value="Auto Split"/>
             </properties>
           </component>
