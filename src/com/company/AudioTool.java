@@ -1,8 +1,5 @@
 package com.company;
 
-import com.sun.jdi.event.ThreadStartEvent;
-import com.sun.jdi.request.ThreadStartRequest;
-
 import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
@@ -59,7 +56,7 @@ public class AudioTool extends Component implements Runnable {
             audioLine.start();
 
 
-            int BUFFER_SIZE = 4096;
+            int BUFFER_SIZE = 64*1024;
 
             byte[] bytesBuffer = new byte[BUFFER_SIZE];
             int bytesRead = -1;
@@ -73,7 +70,7 @@ public class AudioTool extends Component implements Runnable {
 
             AudioTool player = new AudioTool(songPath);
 
-            player.run();
+            //player.run();
 
 
 
@@ -99,6 +96,10 @@ public class AudioTool extends Component implements Runnable {
 
     public static void getFiles(String folderPath) {
 
+        String temp;
+        AudioTool files = null;
+        Thread fileThread = null;
+
         try (Stream<Path> walk = Files.walk(Paths.get(folderPath))) {
 
             List<String> result = walk.filter(Files::isRegularFile)
@@ -107,29 +108,22 @@ public class AudioTool extends Component implements Runnable {
             for (int i=0; i<result.size(); i++) {
 
 
-                 String temp = result.get(i);
+                 temp = result.get(i);
 
-                 AudioTool files = new AudioTool(temp);
+                 files = new AudioTool(temp);
 
-                 Thread thread = new Thread(files);
+                  fileThread = new Thread(files);
 
-                 thread.start();
-
-                System.out.println(thread.getId());
+                 fileThread.start();
 
 
+                System.out.println(files.getName());
 
 
             }
 
 
-
-
-
-
-
-
-
+            fileThread.run();
 
 
 
